@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,7 +5,7 @@
 
 <meta charset="UTF-8">
 
-<title>WIKI</title>
+<title>IA</title>
 
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 
@@ -20,11 +19,22 @@ body{
 
 df-messenger {
 
+  /* COLOR DE RESPUESTA DEL BOT */
   --df-messenger-bot-message: #9D4EDD;
-  --df-messenger-button-titlebar-color: #40E0D0;
+
+  /* COLOR ROSADO DEL HEADER */
+  --df-messenger-button-titlebar-color: #FF69B4;
+
+  /* FONDO DEL CHAT */
   --df-messenger-chat-background-color: #FFFFFF;
+
+  /* COLOR DEL TEXTO */
   --df-messenger-font-color: white;
+
+  /* COLOR DEL ICONO ENVIAR */
   --df-messenger-send-icon: #FFC0CB;
+
+  /* COLOR MENSAJES DEL USUARIO */
   --df-messenger-user-message: #FFC0CB;
 
   position: fixed;
@@ -42,7 +52,7 @@ df-messenger {
 
 <df-messenger
   intent="WELCOME"
-  chat-title="WIKI"
+  chat-title="IA"
   agent-id="392bc03b-8483-44c1-824e-47e2b77d862a"
   language-code="es">
 </df-messenger>
