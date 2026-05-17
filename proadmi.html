@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Nexora Solutions</title>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    background:transparent;
+}
+
+df-messenger {
+
+  --df-messenger-bot-message: #9D4EDD;
+  --df-messenger-button-titlebar-color: #40E0D0;
+  --df-messenger-chat-background-color: #FFFFFF;
+  --df-messenger-font-color: white;
+  --df-messenger-send-icon: #FFC0CB;
+  --df-messenger-user-message: #FFC0CB;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  z-index: 999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<df-messenger
+  intent="WELCOME"
+  chat-title="Nexora Solutions"
+  agent-id="c3f57e34-9104-4d14-8b8f-b060e936dcac"
+  language-code="es">
+</df-messenger>
+
+</body>
+
+</html>
