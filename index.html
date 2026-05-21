@@ -1,48 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>IA</title>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
 <style>
 
 body{
     margin:0;
     padding:0;
     background:transparent;
+    width:100%;
+    height:100vh;
 }
 
 /* CHATBOT */
 
 df-messenger {
 
-  --df-messenger-bot-message: #C8A2F0;
-
-  /* BARRA SUPERIOR MORADO */
+  /* Barra superior lila */
   --df-messenger-button-titlebar-color: #A06CD5;
 
-  /* FONDO */
-  --df-messenger-chat-background-color: rgba(255,255,255,0.95);
+  /* Mensajes del bot */
+  --df-messenger-bot-message: #C8A2F0;
 
-  /* MENSAJES USUARIO ROSA */
+  /* Mensajes usuario */
   --df-messenger-user-message: #FFC0CB;
 
-  /* ICONO ENVIAR TURQUESA */
+  /* Icono enviar */
   --df-messenger-send-icon: #40E0D0;
+
+  /* Fondo del chat */
+  --df-messenger-chat-background-color: #FFFFFF;
 
   width:480px;
   height:700px;
 
 }
 
-/* CAMBIAR HEADER INTERNO */
-
-df-messenger::part(titlebar){
-
-background:#A06CD5;
-
-}
-
-/* BOTÓN FLOTANTE */
-
-df-messenger::part(chat-button){
-
-background:#FF9ECF;
-
-}
-
 </style>
+
+</head>
+
+<body>
+
+<df-messenger
+intent="WELCOME"
+chat-title="IA"
+agent-id="392bc03b-8483-44c1-824e-47e2b77d862a"
+language-code="es">
+</df-messenger>
+
+</body>
+
+</html>
